@@ -1,0 +1,27 @@
+#navbar{
+    height: 10vh;
+    z-index: 5;
+    background-color: white;
+}
+#crousel img{
+    height: 500px;
+    width: 100%;
+}
+#product-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 30px 0px;
+    color: green;
+}
+
+#products{
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+#card{
+    width: 320px;
+}

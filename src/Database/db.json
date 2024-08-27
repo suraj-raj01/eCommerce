@@ -1,0 +1,112 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
+            "image":"https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg"
+        },
+        {
+            "id":2,
+            "name":"HP Laptop 15",
+            "categories":"Laptop",
+            "brand":"HP",
+            "price":36680,
+            "description":"HP Laptop 15,12th Gen Intel Core i3-1215U,15.6 inch(39.6 cm),FHD,Anti-Glare,8 GB DDR4,512 GB SSD,Windows 11,MSO,Dual Speakers,1.69 kg,Natural Silver,15s-fq5326TU  ",
+            "image":"https://m.media-amazon.com/images/I/61Cs3B5GHhL._SL1500_.jpg"
+        },
+        {
+            "id":3,
+            "name":"Dell [Smartchoice] 15",
+            "categories":"Laptop",
+            "brand":"Dell",
+            "price":36990,
+            "description":"Dell [Smartchoice] 15 Thin & Light Laptop, 12th Gen Intel Core i3-1215U Processor/8GB/512GB SSD/Intel UHD Graphics/15.6 (39.62cm) FHD/Windows 11 + McAfee/Spill-Resistant KB/Grey/1.48kg ",
+            "image":"https://m.media-amazon.com/images/I/71TcPkUibVL._SL1500_.jpg"
+        },
+        {
+            "id":4,
+            "name":"Lenovo IdeaPad Slim 1 AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Lenovo",
+            "price":38990,
+            "description":"Lenovo IdeaPad Slim 1 AMD Ryzen 5 5500U 15.6 HD Thin and Light Laptop (16GB/512GB SSD/Windows 11 Home/MS Office 2021/1Yr ADP Free/Cloud Grey/1.61Kg), 82R400ERIN Processor: Intel Core i3-1215U 12th Generation (up to 4.40 GHz, 10MB 6 Cores)  ",
+            "image":"https://m.media-amazon.com/images/I/71xHNSCyRsL._SL1500_.jpg"
+        },
+        {
+            "id":5,
+            "name":"ZEB-NBC 4S",
+            "categories":"Laptop",
+            "brand":"ZEBRONICS",
+            "price":34990,
+            "description":"ZEBRONICS PRO Series Z NBC 4S, Intel Core 12th Gen i5 Processor 16GB RAM & 512GB SSD Laptop, 15.6 Inch (39.6CM), IPS 180° Display, Dolby Atmos, 38.5Wh Large Battery, Windows 11, Midnight Blue,1.76 Kg ",
+            "image":"https://m.media-amazon.com/images/I/716sWuE6mVL._SL1500_.jpg"
+        },
+        {
+            "id":6,
+            "name":"ASUS Vivobook Go 14",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":33990,
+            "description":"ASUS Vivobook Go 14, AMD Ryzen 3 7320U, Thin and Light Laptop,Thin and Light Laptop, 14 (35.56 cm) FHD, (8 GB RAM/512GB SSD/Windows 11/Office 2021/42WHr /Black/1.38 kg), E1404FA-NK325WS  ",
+            "image":"https://m.media-amazon.com/images/I/71VRrc7V-PL._SL1500_.jpg"
+        },
+        {
+            "id":7,
+            "name":"Acer Aspire 3",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire 3 (Intel Core i3 1215U Processor/ 8GB/ 512 GB SSD/Windows 11, 512 GB SSD/Windows 11 Home/MS Office) A315-59 with 39.6 cm (15.6) Full HD Display /1.78kg  ",
+            "image":"https://m.media-amazon.com/images/I/81-qfzp7+KL._SL1500_.jpg"
+        },
+        {
+            "id":8,
+            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
+            "image":"https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg"
+        },
+        {
+            "id":9,
+            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
+            "image":"https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg"
+        },
+        {
+            "id":10,
+            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
+            "image":"https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg"
+        },
+        {
+            "id":11,
+            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
+            "image":"https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg"
+        },
+        {
+            "id":12,
+            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "categories":"Laptop",
+            "brand":"Acer",
+            "price":34990,
+            "description":"Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
+            "image":"https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg"
+        }
+    ]
+}
