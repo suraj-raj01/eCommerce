@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 import {
   MDBCard,
@@ -12,10 +11,9 @@ import {
 } from "mdb-react-ui-kit";
 
 const Details = () => {
-  const { id } = useParams();
   const [mydata, setMydata] = useState([]);
   const loadData = () => {
-    let api = `http://localhost:3000/products/${id}`;
+    let api = `http://localhost:3000/products`;
     axios.get(api).then((res) => {
       setMydata(res.data);
       console.log(res.data);
@@ -42,7 +40,9 @@ useEffect(()=>{
   });
   return (
     <>
-      <div>{res}</div>
+      <div>
+        {res}
+        </div>
     </>
   );
 };

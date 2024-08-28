@@ -1,7 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import {
   MDBCard,
   MDBCardBody,
@@ -11,7 +10,10 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 
+import { useDispatch } from "react-redux";
+import addCartData from "../countSlice";
 const Home = () => {
+  const dispatch = useDispatch();
   const [mydata, setMydata] = useState([]);
   const loadData = () => {
     let api = "http://localhost:3000/products";
@@ -23,11 +25,9 @@ const Home = () => {
     loadData();
   },[]);
 
-const myNav = useNavigate();
-const details = (id) =>{
-  myNav(`/details/${id}`)
+const addCart = (id) => {
+  dispatch(addCartData(id))
 }
-
   const res = mydata.map((key) => {
     return (
       <>
@@ -40,7 +40,7 @@ const details = (id) =>{
               {key.description}
             </MDBCardText>
             <p style={{color:'red'}}>Price : {key.price}</p>
-            <MDBBtn onClick={()=>{details(key.id)}}>Button</MDBBtn>
+            <MDBBtn onClick={()=>{addCart(key.id)}}>Button</MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </>
@@ -72,7 +72,7 @@ const details = (id) =>{
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={1000}>
           <img
             src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg"
             alt=""
@@ -83,9 +83,9 @@ const details = (id) =>{
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
           </Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item >
 
-        <Carousel.Item>
+        <Carousel.Item interval={1000}>
           <img
             src="https://cdn.pixabay.com/photo/2016/10/15/13/40/laptop-1742462_640.jpg"
             alt=""
