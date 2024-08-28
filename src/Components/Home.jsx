@@ -1,8 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import Footer from "../Components/Footer";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 import {
   MDBCard,
   MDBCardBody,
@@ -24,6 +23,11 @@ const Home = () => {
     loadData();
   },[]);
 
+const myNav = useNavigate();
+const details = (id) =>{
+  myNav(`/details/${id}`)
+}
+
   const res = mydata.map((key) => {
     return (
       <>
@@ -36,7 +40,7 @@ const Home = () => {
               {key.description}
             </MDBCardText>
             <p style={{color:'red'}}>Price : {key.price}</p>
-            <MDBBtn href="#">Button</MDBBtn>
+            <MDBBtn onClick={()=>{details(key.id)}}>Button</MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </>
@@ -44,8 +48,9 @@ const Home = () => {
   });
   return (
     <>
-    <br />
-    <marquee scrollamout="20"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt repellendus nisi magnam itaque ut corporis dolorum quibusdam quaerat rem placeat, suscipit explicabo minus excepturi error, tempora, aperiam nam quia amet voluptas eveniet dolore! Voluptates</p></marquee>
+    <div id="marquee">
+    <marquee scrollamount="15" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt repellendus nisi magnam itaque ut corporis dolorum quibusdam quaerat rem placeat, suscipit explicabo minus excepturi error, tempora, aperiam nam quia amet voluptas eveniet dolore! Voluptates</p></marquee>
+    </div>
       <Carousel id="crousel">
         <Carousel.Item interval={1000}>
           <img
@@ -69,7 +74,20 @@ const Home = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            src="https://images.unsplash.com/photo-1585314294157-e84eeda2c59e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg"
+            alt=""
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            src="https://cdn.pixabay.com/photo/2016/10/15/13/40/laptop-1742462_640.jpg"
             alt=""
           />
           <Carousel.Caption>
@@ -86,7 +104,6 @@ const Home = () => {
       <div id="products">
         {res}
         </div>
-      <Footer />
     </>
   );
 };

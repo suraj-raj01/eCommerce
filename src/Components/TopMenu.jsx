@@ -4,14 +4,16 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+
 import {MDBIcon} from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 const TopMenu = () => {
   return (
     <>
       <Navbar expand="lg" id="navbar">
         <Container style={{backgroundColor:'white', padding:'10px',color:'black'}}>
-          <Navbar.Brand href="#" style={{fontWeight:'bold',color:'teal'}}>Laptop-Shop</Navbar.Brand>
+          <Navbar.Brand href="home" style={{fontWeight:'bold',color:'teal'}}>Laptop-Shop</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" >
             <Nav
@@ -19,15 +21,15 @@ const TopMenu = () => {
               style={{ maxHeight: "350px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Contact</Nav.Link>
+              <Nav.Link as={Link} to="home">Home</Nav.Link>
+              <Nav.Link as={Link} to="contact">Contact</Nav.Link>
               <NavDropdown title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Mobile Service</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
+                <NavDropdown.Item as={Link} to="srvice1">Mobile Service</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="srvice2">
                   Laptop Service
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
+                <NavDropdown.Item as={Link} to="srvice3">
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
@@ -43,7 +45,7 @@ const TopMenu = () => {
               <Button variant="outline-success">Search</Button>
             </Form>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div style={{display:'flex', color:'teal',fontSize:'20px'}}>
+            <div style={{display:'flex',fontSize:'18px'}}>
             <Nav.Link href="#">
             <MDBIcon fas icon="user-plus" />
               </Nav.Link>
