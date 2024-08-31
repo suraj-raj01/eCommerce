@@ -1,67 +1,77 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
-import {MDBIcon} from "mdb-react-ui-kit";
+import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaUser } from "react-icons/fa";
+import { IoSearch } from "react-icons/io5";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const TopMenu = () => {
+  const MyData = useSelector((state) => state.addCart.cart);
+  console.log(MyData);
+  const DataCount = MyData.length;
+  const navigate = useNavigate();
+
+  const myCart = () => {
+    navigate("/mycart");
+  };
+
   return (
     <>
-      <Navbar expand="lg" id="navbar">
-        <Container style={{backgroundColor:'white', padding:'10px',color:'black'}}>
-          <Navbar.Brand href="home" style={{fontWeight:'bold',color:'teal'}}>Laptop-Shop</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll" >
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "350px" }}
-              navbarScroll
-            >
-              <Nav.Link as={Link} to="home">Home</Nav.Link>
-              <Nav.Link as={Link} to="contact">Contact</Nav.Link>
-              <NavDropdown title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link} to="srvice1">Mobile Service</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="srvice2">
-                  Laptop Service
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to="srvice3">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-           
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div style={{display:'flex',fontSize:'18px'}}>
-            <Nav.Link href="#">
-            <MDBIcon fas icon="user-plus" />
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-            <Nav.Link href="#">
-            <MDBIcon fas icon="cart-plus" />
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-            <Nav.Link href="#">
-            <MDBIcon fab icon="github" />
-              </Nav.Link>
-            </div>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+        <Navbar collapseOnSelect expand="lg" id="topmenu">
+          <Container>
+            <Navbar.Brand href="#home" style={{fontSize:'30px',fontWeight:'bold'}}>Laptop</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" >
+              <Nav className="me-auto">
+                <Nav.Link as={Link} to="home">
+                  Home
+                </Nav.Link>
+                <Nav.Link to="home">Searvices</Nav.Link>
+                <Nav.Link to="home">Products</Nav.Link>
+                <Nav.Link to="home">Watches</Nav.Link>
+                <Nav.Link to="home">Sale</Nav.Link>
+                <Nav.Link to="home">Blog</Nav.Link>
+                <NavDropdown title="Category" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item href="lowprice">
+                    {" "}
+                    Low-Price
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Medium-Price
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    High-Price
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+              <Nav>
+                <div style={{display:'flex',gap:'10px'}}>
+                <Nav.Link href="#deets">
+                  <IoSearch />
+                </Nav.Link>
+                <Nav.Link href="#deets">
+                  <FaUser />
+                </Nav.Link>
+                <Nav.Link href="#memes">
+                  <a href="#" onClick={myCart} style={{textDecoration:'none', color:'black'}}>
+                    <FaShoppingCart />
+                    <sup style={{fontWeight:'bold',backgroundColor:'skyblue',borderRadius:'50px',padding:'2px 6px'}}>
+                        {DataCount}
+                  </sup>
+                  </a>
+                </Nav.Link>
+                </div>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
     </>
   );
 };
+
 export default TopMenu;
