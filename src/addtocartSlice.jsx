@@ -38,9 +38,9 @@ const addtoCart= createSlice({
                 {
                      if(state.cart[i].id==action.payload.id)
                      {
-                        if (state.cart[i].qnty<=1)
+                        if (state.cart[i].qnty<1)
                         {
-                            message.error("Quantity not less than 1 ");
+                            message.error("Quantity not less than 0 ");
                         }
                         else 
                         {

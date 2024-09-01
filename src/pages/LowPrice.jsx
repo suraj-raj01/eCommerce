@@ -26,7 +26,7 @@ const LowPrice = () => {
       addcartData({
         id: id,
         name: name,
-        category: cate,
+        categories: cate,
         brand: brand,
         price: price,
         description: desc,
@@ -39,13 +39,14 @@ const LowPrice = () => {
   const ans = mydata.map((key) => {
     return (
       <>
-        <Card style={{ width: "250px", marginTop: "20px" }}>
+        <Card id="card">
           <Card.Img variant="top" src={key.image} />
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
             <h4 style={{ color: "blue", fontSize: "14px" }}>
               {" "}
-              Brand : {key.brand} For - {key.category}
+              Brand : {key.brand} 
+               <p style={{fontWeight:'bold',color:'red',padding:'5px 0px 0px 0px'}}> Categories : {key.categories}</p>
             </h4>
             <Card.Text>{key.description}</Card.Text>
             <h4 style={{ color: "red", fontSize: "16px" }}>
@@ -58,7 +59,7 @@ const LowPrice = () => {
                 addDataToCart(
                   key.id,
                   key.name,
-                  key.category,
+                  key.categories,
                   key.brand,
                   key.price,
                   key.description,
@@ -77,7 +78,8 @@ const LowPrice = () => {
   return (
     <>
       <div id="proHeading">
-        <h1> Low Price</h1>
+        <br />
+        <h1> Low Price Laptops</h1>
       </div>
 
       <div id="homeProduct">{ans}</div>

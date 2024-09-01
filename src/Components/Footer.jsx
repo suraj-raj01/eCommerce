@@ -40,7 +40,7 @@ const Footer=()=>{
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                LaptopShop
               </h6>
               <p>
                 Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
@@ -100,11 +100,11 @@ const Footer=()=>{
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                LIG-140 Bharti-Niketan, Bhopal INDIA
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                info@laptopshop.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
@@ -120,7 +120,7 @@ const Footer=()=>{
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
         <a className='text-reset fw-bold' href='https://cybrombhopal.com/'>
-          Cybrom.com
+          laptopshop.com
         </a>
       </div>
     </MDBFooter>

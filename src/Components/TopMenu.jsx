@@ -23,7 +23,7 @@ const TopMenu = () => {
     <>
         <Navbar collapseOnSelect expand="lg" id="topmenu">
           <Container>
-            <Navbar.Brand href="#home" style={{fontSize:'30px',fontWeight:'bold'}}>Laptop</Navbar.Brand>
+            <Navbar.Brand as={Link} to="home" style={{fontSize:'30px',fontWeight:'bold',color:'teal'}}>Laptop</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" >
               <Nav className="me-auto">
@@ -36,31 +36,29 @@ const TopMenu = () => {
                 <Nav.Link to="home">Sale</Nav.Link>
                 <Nav.Link to="home">Blog</Nav.Link>
                 <NavDropdown title="Category" id="collapsible-nav-dropdown">
-                  <NavDropdown.Item href="lowprice">
-                    {" "}
+                  <NavDropdown.Item as={Link} to="lowprice">
                     Low-Price
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item as={Link} to="mediumprice">
                     Medium-Price
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
+                  <NavDropdown.Item as={Link} to="highprice">
                     High-Price
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
               <Nav>
-                <div style={{display:'flex',gap:'10px'}}>
-                <Nav.Link href="#deets">
+                <div style={{display:'flex',gap:'5px'}}>
+                <Nav.Link as={Link} to="#" style={{textDecoration:'none', color:'teal'}}>
                   <IoSearch />
                 </Nav.Link>
-                <Nav.Link href="#deets">
+                <Nav.Link as={Link} to="#" style={{textDecoration:'none', color:'teal'}}>
                   <FaUser />
                 </Nav.Link>
-                <Nav.Link href="#memes">
-                  <a href="#" onClick={myCart} style={{textDecoration:'none', color:'black'}}>
+                <Nav.Link>
+                  <a href="#" onClick={myCart} style={{textDecoration:'none', color:'teal'}}>
                     <FaShoppingCart />
-                    <sup style={{fontWeight:'bold',backgroundColor:'skyblue',borderRadius:'50px',padding:'2px 6px'}}>
+                    <sup style={{fontWeight:'bold',fontSize:'10px', marginLeft:'3px',backgroundColor:'teal',color:'white', borderRadius:'50px',padding:'2px 5px'}}>
                         {DataCount}
                   </sup>
                   </a>

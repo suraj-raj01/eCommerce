@@ -28,7 +28,7 @@ const Home = () => {
       addcartData({
         id: id,
         name: name,
-        category: cate,
+        categories: cate,
         brand: brand,
         price: price,
         description: desc,
@@ -41,13 +41,14 @@ const Home = () => {
   const ans = mydata.map((key) => {
     return (
       <>
-        <Card style={{ width: "320px", marginTop: "20px"}}>
+        <Card id="card">
           <Card.Img variant="top" src={key.image} />
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
             <h4 style={{ color: "blue", fontSize: "14px" }}>
               {" "}
-              Brand : {key.brand} For - {key.category}
+              Brand : {key.brand} <br />
+              <p id="category">Categories : {key.categories}</p>
             </h4>
             <Card.Text>{key.description}</Card.Text>
             <h4 style={{ color: "red", fontSize: "16px" }}>
@@ -60,7 +61,7 @@ const Home = () => {
                 addDataToCart(
                   key.id,
                   key.name,
-                  key.category,
+                  key.categories,
                   key.brand,
                   key.price,
                   key.description,
@@ -78,6 +79,9 @@ const Home = () => {
 
   return (
     <>
+    <div style={{display:'flex',padding:'10px'}}>
+    <marquee behavior="smooth" direction="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vel laboriosam nam hic consequatur accusantium cupiditate error cumque aperiam soluta?</marquee>
+    </div>
       <Carousel>
         <Carousel.Item>
           <img src="https://m.media-amazon.com/images/I/51hJIsWMagL._AC_UF1000,1000_QL80_.jpg" alt=""width='100%' height='400px' />
@@ -105,6 +109,7 @@ const Home = () => {
       </Carousel>
 
       <div id="proHeading">
+        <br />
         <h1> Our Premium Laptops</h1>
       </div>
 

@@ -31,13 +31,13 @@ const MyCart = () => {
           <td> {sno} </td>
           <td>
             {" "}
-            <img src={key.image} wudth="100" height="100" />{" "}
+            <img src={key.image} width="100%" height="130" />{" "}
           </td>
           <td>{key.name} </td>
           <td>{key.brand} </td>
-          <td>{key.category} </td>
+          <td>{key.categories} </td>
           <td style={{ fontSize: "12px", width: "300px" }}>
-            {key.description}{" "}
+            <p style={{fontStyle:'italic',fontSize:'12px'}}>{key.description}</p>
           </td>
           <td>{key.price} </td>
           <th>
@@ -77,8 +77,8 @@ const MyCart = () => {
   return (
     <>
     <br />
-      <center><h1><b> My Cart</b></h1></center><br />
-      <Table striped bordered hover>
+      <center><h1><b> My Carts</b></h1></center><br />
+      <Table responsive="sm">
         <thead>
           <tr>
             <th>S.No</th>
