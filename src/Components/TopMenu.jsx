@@ -18,56 +18,105 @@ const TopMenu = () => {
   const myCart = () => {
     navigate("/mycart");
   };
-
+  const login = () => {
+    navigate("/login");
+  };
   return (
     <>
-        <Navbar collapseOnSelect expand="lg" id="topmenu">
-          <Container>
-            <Navbar.Brand as={Link} to="home" style={{fontSize:'30px',fontWeight:'bold',color:'teal'}}>Laptop</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav" >
-              <Nav className="me-auto">
-                <Nav.Link as={Link} to="home">
-                  Home
-                </Nav.Link>
-                <Nav.Link to="home">Searvices</Nav.Link>
-                <Nav.Link to="home">Products</Nav.Link>
-                <Nav.Link to="home">Watches</Nav.Link>
-                <Nav.Link to="home">Sale</Nav.Link>
-                <Nav.Link to="home">Blog</Nav.Link>
-                <NavDropdown title="Category" id="collapsible-nav-dropdown">
-                  <NavDropdown.Item as={Link} to="lowprice">
-                    Low-Price
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="mediumprice">
-                    Medium-Price
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="highprice">
-                    High-Price
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <Nav>
-                <div style={{display:'flex',gap:'5px'}}>
-                <Nav.Link as={Link} to="#" style={{textDecoration:'none', color:'teal'}}>
+      <Navbar collapseOnSelect expand="lg" id="topmenu">
+        <Container>
+          <Navbar.Brand
+            as={Link}
+            to="home"
+            style={{ fontSize: "30px", fontWeight: "bold", color: "#6868b3" }}
+          >
+            Laptop
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="home">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="products">
+                Products
+              </Nav.Link>
+
+              <NavDropdown title="Brands" id="collapsible-nav-dropdown">
+                <NavDropdown.Item as={Link} to="dell">
+                  DELL
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="mac">
+                  MAC
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="lenovo">
+                  LENOVO
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="hp">
+                  HP
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="acer">
+                  ACER
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="asus">
+                  ASUS
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="zebronics">
+                  ZEBRONICS
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link as={Link} to="contact">
+                Contact
+              </Nav.Link>
+              <Nav.Link as={Link} to="blogs">
+                Blogs
+              </Nav.Link>
+              <Nav.Link as={Link} to="about">
+                About
+              </Nav.Link>
+            </Nav>
+            <Nav>
+              <div style={{ display: "flex", gap: "5px" }}>
+                <Nav.Link
+                  as={Link}
+                  to="#"
+                  style={{ textDecoration: "none", color: "#6868b3" }}
+                >
                   <IoSearch />
                 </Nav.Link>
-                <Nav.Link as={Link} to="#" style={{textDecoration:'none', color:'teal'}}>
+                <Nav.Link
+                  style={{ textDecoration: "none", color: "#6868b3" }}
+                  onClick={login}
+                >
                   <FaUser />
                 </Nav.Link>
                 <Nav.Link>
-                  <a href="#" onClick={myCart} style={{textDecoration:'none', color:'teal'}}>
+                  <a
+                    href="#"
+                    onClick={myCart}
+                    style={{ textDecoration: "none", color: "#6868b3" }}
+                  >
                     <FaShoppingCart />
-                    <sup style={{fontWeight:'bold',fontSize:'10px', marginLeft:'3px',backgroundColor:'teal',color:'white', borderRadius:'50px',padding:'2px 5px'}}>
-                        {DataCount}
-                  </sup>
+                    <sup
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: "10px",
+                        marginLeft: "3px",
+                        backgroundColor: "#6868b3",
+                        color: "white",
+                        borderRadius: "50px",
+                        padding: "2px 5px",
+                      }}
+                    >
+                      {DataCount}
+                    </sup>
                   </a>
                 </Nav.Link>
-                </div>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 };

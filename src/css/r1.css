@@ -1,5 +1,4 @@
 
-
 #homeProduct
 {
     width: 90%;
@@ -14,7 +13,7 @@
 #proHeading
 {
     text-align: center;
-    color: rgb(104, 104, 179);
+    color: #6868b3;
 }
 
 #topmenu
@@ -49,8 +48,53 @@
 #category{
     padding: 5px 0px 0px 0px;
     font-weight: bold;
-    color: red;
+    color: green;
 }
 td{
     text-align: start;
+}
+#details{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#img{
+    width: 50%;
+}
+#desc{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+#form{
+    text-align: center;
+    font-weight: bold;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+Form{
+    box-shadow: 0px 0px 2px;
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+Form #forget{
+    text-align: end;
+    color: #6868b3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+Form Button{
+    width: 100%;
+    margin-top: 10px;
+}
+#form input{
+    width: 350px;
 }

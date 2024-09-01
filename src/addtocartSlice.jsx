@@ -51,8 +51,9 @@ const addtoCart= createSlice({
         },
         dataDel:(state, action)=>{
              state.cart=state.cart.filter(item=>item.id!=action.payload.id)
+             message.success("Item Removed!!")
         }
     }
 })
 export default addtoCart.reducer;
-export const {addcartData,qntyInc, qntyDec, dataDel }= addtoCart.actions;
+export const {addcartData,qntyInc, qntyDec, dataDel}= addtoCart.actions;

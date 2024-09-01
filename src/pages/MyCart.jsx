@@ -35,9 +35,11 @@ const MyCart = () => {
           </td>
           <td>{key.name} </td>
           <td>{key.brand} </td>
-          <td>{key.categories} </td>
+          <td>{key.model} </td>
           <td style={{ fontSize: "12px", width: "300px" }}>
-            <p style={{fontStyle:'italic',fontSize:'12px'}}>{key.description}</p>
+            <p style={{ fontStyle: "italic", fontSize: "12px" }}>
+              {key.description}
+            </p>
           </td>
           <td>{key.price} </td>
           <th>
@@ -76,20 +78,27 @@ const MyCart = () => {
 
   return (
     <>
-    <br />
-      <center><h1><b> My Carts</b></h1></center><br />
+      <br />
+      <center>
+        <h1>
+          <b> My Carts</b>
+        </h1>
+        <hr />
+      </center>
+      <br />
+      <div style={{padding:'0px 20px'}}>
       <Table responsive="sm">
         <thead>
           <tr>
             <th>S.No</th>
-            <th> </th>
+            <th></th>
             <th>Product Name</th>
             <th>Brand</th>
-            <th> Category </th>
-            <th> Description</th>
-            <th> Price</th>
-            <th> Quantity</th>
-            <th> Total </th>
+            <th>Model </th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
             <td></td>
           </tr>
         </thead>
@@ -101,20 +110,30 @@ const MyCart = () => {
             <th> </th>
             <th></th>
             <th></th>
-            <th> </th>
-            <th> </th>
+            <th></th>
+            <th></th>
             <th></th>
             <th width="200" style={{ color: "green", fontSize: "20px" }}>
               {" "}
               Grand Total:{" "}
             </th>
             <th style={{ color: "green", fontSize: "20px" }}> {grandTotal} </th>
-            <td><img src="https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk" alt="" height='30px' />
-            <img src="https://pbs.twimg.com/profile_images/1615271089705463811/v-emhrqu_400x400.png" height='25px' alt="" />
+            <td>
+              <img
+                src="https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk"
+                alt=""
+                height="30px"
+              />
+              <img
+                src="https://pbs.twimg.com/profile_images/1615271089705463811/v-emhrqu_400x400.png"
+                height="25px"
+                alt=""
+              />
             </td>
           </tr>
         </tbody>
       </Table>
+      </div>
     </>
   );
 };
