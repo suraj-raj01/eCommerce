@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addcartData } from "../addtocartSlice";
+import { useNavigate } from "react-router-dom";
 
 const Zebronics = () => {
   const [mydata, setMydata] = useState([]);
@@ -35,12 +36,15 @@ const Zebronics = () => {
       })
     );
   };
-
+  const navigate = useNavigate();
+  const details = (id)=>{
+    navigate(`/details/${id}`);
+  }
   const ans = mydata.map((key) => {
     return (
       <>
         <Card id="card">
-          <Card.Img variant="top" src={key.image} />
+          <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}}/>
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
             <h4 style={{ color: "blue", fontSize: "14px" }}>

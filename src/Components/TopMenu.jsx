@@ -8,8 +8,10 @@ import { FaUser } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const TopMenu = () => {
+  const [searchData,setSearchData] = useState("")
   const MyData = useSelector((state) => state.addCart.cart);
   console.log(MyData);
   const DataCount = MyData.length;
@@ -21,6 +23,9 @@ const TopMenu = () => {
   const login = () => {
     navigate("/login");
   };
+  const handleSearch = () =>{
+    navigate(`/productsearch/${searchData}`)
+  }
   return (
     <>
       <Navbar collapseOnSelect expand="lg" id="topmenu">
@@ -77,12 +82,12 @@ const TopMenu = () => {
             </Nav>
             <Nav>
               <div style={{ display: "flex", gap: "5px" }}>
-                <Nav.Link
-                  as={Link}
-                  to="#"
+              <Nav.Link
+                  
                   style={{ textDecoration: "none", color: "#6868b3" }}
                 >
-                  <IoSearch />
+                  <input id="input" placeholder="Search..." type="text" value={searchData} onChange={(e)=>{setSearchData(e.target.value)}}/>
+                <button id="srchbtn" onClick={handleSearch}> search </button>
                 </Nav.Link>
                 <Nav.Link
                   style={{ textDecoration: "none", color: "#6868b3" }}

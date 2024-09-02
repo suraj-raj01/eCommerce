@@ -16,7 +16,7 @@ const Footer=()=>{
           <a href='' className='me-4 text-reset'>
             <MDBIcon fab icon="facebook-f" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://x.com/im_suraj03' target='_blank'  className='me-4 text-reset'>
             <MDBIcon fab icon="twitter" />
           </a>
           <a href='' className='me-4 text-reset'>
@@ -25,10 +25,10 @@ const Footer=()=>{
           <a href='' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/in/suraj-kumar-1965b0296/' target='_blank' className='me-4 text-reset'>
             <MDBIcon fab icon="linkedin" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://github.com/suraj-raj01' target='_blank' className='me-4 text-reset'>
             <MDBIcon fab icon="github" />
           </a>
         </div>
@@ -52,24 +52,25 @@ const Footer=()=>{
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Angular
+                  Dell
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  React
+                  Lenovo
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Vue
+                  Acer
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Laravel
+                  Apple
                 </a>
               </p>
+
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>

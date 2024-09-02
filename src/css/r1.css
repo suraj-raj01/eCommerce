@@ -33,22 +33,33 @@
     background-color: white;
     padding: 5px 10px;
 }
-
+#input{
+    border: 1px solid #6868b3;
+    padding: 3px 5px;
+}
+#srchbtn{
+    border: none;
+    padding: 3px 10px;
+    border: 1px solid #6868b3;
+    color: #6868b3;
+    background-color: transparent;
+    font-weight: bold;
+}
 #card{
     width: 320px;
     margin-top: 20px;
-    transition: .5s;
+    transition: .8s;
 }
 #card img{
-    transition: .5s;
+    transition: .8s;
 }
 #card img:hover{
     transform: scale(.9);
-    transition: .5s;
+    transition: .8s;
 }
 #card:hover{
-    transform: scale(1.02);
-    transition: .5s;
+    transform: scale(1.01);
+    transition: .8s;
 }
 #category{
     padding: 5px 0px 0px 0px;
@@ -57,7 +68,7 @@
 }
 
 #details{
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -73,6 +84,18 @@
     flex-direction: column;
     align-items: start;
     gap: 8px;
+}
+#reg-form{
+    text-align: center;
+    font-weight: bold;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#reg-form input{
+    width: 350px;
 }
 #form{
     text-align: center;

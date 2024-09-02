@@ -2,7 +2,7 @@
     "products":[
         {
             "id":1,
-            "name":"Acer Aspire Lite AMD Ryzen 5",
+            "name":"Acer Aspire Lite AMD Ryzen 5 5500U Premium",
             "model":"Acer Laptop",
             "brand":"Acer",
             "price":34990,
@@ -20,7 +20,7 @@
         },
         {
             "id":3,
-            "name":"Dell [Smartchoice] 15",
+            "name":"Dell [Smartchoice] 15 Thin & Light Laptop",
             "model":"Dell Laptop",
             "brand":"Dell",
             "price":36990,
@@ -146,11 +146,11 @@
         },
         {
             "id":17,
-            "name":"Dell 15 Thin & Light Laptop",
+            "name":"HP Pavilion 15, AMD Ryzen 7 5700U",
             "model":"Hp Laptop",
             "brand":"HP",
             "price":57990,
-            "description":"HP Pavilion 15, AMD Ryzen 7 5700U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 1TB SSD, AMD Radeon graphics, FPR, 720p HD camera, Backlit KB, Audio by B&O (Win 11, MSO 2021, Silver, 1.75 kg), eh1147AU ",
+            "description":"HP Pavilion 15, AMD Ryzen 7 5700U,  FHD, 16GB DDR4, 1TB SSD, AMD Radeon graphics, FPR, 720p HD camera, Backlit KB, Audio by B&O (Win 11, MSO 2021, Silver, 1.75 kg), eh1147AU ",
             "image":"https://m.media-amazon.com/images/I/71bxBKA6r+L._SL1500_.jpg"
         },
         {

@@ -114,7 +114,7 @@ const Home = () => {
           fontWeight: "600",
         }}
       >
-        <marquee behavior="smooth" direction="left" scrollamount="16">
+        <marquee direction="left" scrollamount="15">
           "Welcome To Laptopshop.com"  Buy Laptops Online | Best Prices, Top Brands
           Premium Laptops | Gaming, Business, & More Discover Your Perfect
           Laptop
@@ -122,7 +122,7 @@ const Home = () => {
       </div>
       <div style={{ width: "98%", margin: "0 auto" }}>
         <Carousel>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={2000}>
             <img
               src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/surface-laptop-7th-edition-non-color-og-twitter-image?scl=1"
               alt=""
@@ -134,7 +134,7 @@ const Home = () => {
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={2000}>
             <img
               src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg"
               alt=""
@@ -146,7 +146,7 @@ const Home = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={2000}>
             <img
               src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg"
               alt=""
@@ -160,7 +160,7 @@ const Home = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={2000}>
             <img
               src="https://images-cdn.ubuy.ae/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
               alt=""
@@ -174,7 +174,7 @@ const Home = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={2000}>
             <img
               src="https://media.product.which.co.uk/prod/images/ar_2to1_1500x750/22a475e555d7-best-laptop-deals.jpg"
               alt=""
@@ -188,7 +188,7 @@ const Home = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={2000}>
             <img
               src="https://assets2.razerzone.com/images/pnx.assets/7fb8deac5d3c73e360bc687ed62be6cf/gaming-laptops-og-image.webp"
               alt=""
