@@ -84,9 +84,9 @@ const Products = () => {
 
   return (
     <>
-      <div id="proHeading">
         <br />
-        <h1> Our Premium Products</h1>
+      <div id="proHeading">
+        <h1 style={{fontWeight:'bold'}}> Our Premium Products</h1>
       </div>
 
       <div id="homeProduct">{ans}</div>

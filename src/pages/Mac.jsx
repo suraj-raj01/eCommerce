@@ -49,7 +49,7 @@ const Mac = () => {
             <h4 style={{ color: "blue", fontSize: "14px" }}>
               {" "}
               Brand : {key.brand} 
-               <p style={{fontWeight:'bold',color:'red',padding:'5px 0px 0px 0px'}}> model : {key.model}</p>
+               <p style={{fontWeight:'bold',color:'red',padding:'5px 0px 0px 0px'}}> Model : {key.model}</p>
             </h4>
             <Card.Text>{key.description}</Card.Text>
             <h4 style={{ color: "red", fontSize: "16px" }}>
@@ -82,7 +82,7 @@ const Mac = () => {
     <>
       <div id="proHeading">
         <br />
-        <h1> Mac Laptops</h1>
+        <h1 style={{fontWeight:'bold'}}> Mac Laptops</h1>
       </div>
 
       <div id="homeProduct">{ans}</div>

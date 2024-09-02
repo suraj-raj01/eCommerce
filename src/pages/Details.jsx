@@ -47,7 +47,7 @@ const Details = () => {
           <div id="desc">
             <p style={{ fontSize: "24px" }}>{key.description}</p>
             <h4 style={{ color: "green",fontWeight:'bold' }}>Price : {key.price}{".00₹"}</h4>
-            <div style={{fontWeight:'bold'}}>
+            <div style={{fontWeight:''}}>
               Name : {key.name}
               <br />
               Brand Name : {key.brand}

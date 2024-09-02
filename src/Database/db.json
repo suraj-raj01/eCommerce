@@ -11,7 +11,7 @@
         },
         {
             "id":2,
-            "name":"HP Laptop 15",
+            "name":"HP Laptop 15, 12th Gen Intel Core i3",
             "model":"Hp Laptop",
             "brand":"HP",
             "price":36680,
@@ -29,7 +29,7 @@
         },
         {
             "id":4,
-            "name":"(Refurbished) Lenovo ThinkPad",
+            "name":"(Refurbished) Lenovo ThinkPad 5th Gen",
             "model":"Lenovo Laptop",
             "brand":"Lenovo",
             "price":38990,
@@ -114,7 +114,7 @@
             "model":"Mac Laptop",
             "brand":"Apple",
             "price":123099,
-            "description":" Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey  ",
+            "description":" Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, Retina Display, Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey  ",
             "image":"https://m.media-amazon.com/images/I/71jG+e7roXL._SL1500_.jpg"
         },
         {
@@ -170,6 +170,78 @@
             "price":30990,
             "description":"ZEBRONICS PRO Series Y NBC 2S, Intel Core 11th Gen i5 Processor 16GB RAM & 512GB SSD Laptop, 15.6 Inch (39.6 CM), IPS Display, Ultra Slim, 38.5Wh Large Battery, Windows 11, Silver, 1.76 Kg  ",
             "image":"https://m.media-amazon.com/images/I/71s2KUCAUsL._SL1500_.jpg"
+        },
+        {
+            "id":20,
+            "name":"Apple 2024 MacBook Air 13",
+            "model":"MacBook Air",
+            "brand":"Apple",
+            "price":147990,
+            "description":"Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Starlight ",
+            "image":"https://m.media-amazon.com/images/I/71YG+VrvrTL._SL1500_.jpg"
+        },
+        {
+            "id":21,
+            "name":"DELL Latitude 5490 Core i5 8th Gen",
+            "model":"Latitue 5490",
+            "brand":"Dell",
+            "price":21250,
+            "description":"(Renewed) DELL Latitude 5490 Core i5 8th Gen Laptop, 16 GB RAM, 512GB SSD, Intel HD Graphics, 14 inch (36.83 cms) HD Screen, Windows 11 (Upgraded), MS Office, Black, Slim ",
+            "image":"https://m.media-amazon.com/images/I/615te9wVfzL._SL1500_.jpg"
+        },
+        {
+            "id":22,
+            "name":"Lenovo ThinkPad L480 8th Gen Intel Core i5",
+            "model":"Lenovo ThinkPad",
+            "brand":"Lenovo",
+            "price":19749,
+            "description":"(Refurbished) Lenovo ThinkPad L480 8th Gen Intel Core i5 Thin & Light HD Laptop (16 GB DDR4 RAM/512 GB SSD/14 (35.6 cm) HD/Windows 11/MS Office/WiFi/Bluetooth/Webcam/Intel Graphics) ",
+            "image":"https://m.media-amazon.com/images/I/61pBGWvM8EL._SL1300_.jpg"
+        },
+        {
+            "id":23,
+            "name":"HP Pavilion x360 2-in-1 Laptop 13th Gen",
+            "model":"HP 14-ek",
+            "brand":"HP",
+            "price":69990,
+            "description":"HP Pavilion x360 2-in-1 Laptop 13th Gen Intel Core i5-1335U, 14-inch (35.56 cm) FHD,Multitouch, 16GB RAM, 512GB SSD, Intel Iris X Graphics, B&O, Pen, FPR (Win 11, MSO, 1.69kg), 14-ek1074TU ",
+            "image":"https://m.media-amazon.com/images/I/71Njhmxnc5L._SL1500_.jpg"
+        },
+        {
+            "id":24,
+            "name":"Dell Inspiorn 5630 Laptop, Intel 13th Gen",
+            "model":"Inspiron 5630",
+            "brand":"Dell",
+            "price":91742,
+            "description":"Dell Inspiorn 5630 Laptop, Intel 13th Gen i7-1360P Processor, 16GB LP DDR5, 1TB SSD, 16.0 FHD+ 300 nits Display, Backlit KB + FPR, Win 11 + MSO'21 & 15 Month, Silver, Thin & Light- 1.85kg McAfee, ",
+            "image":"https://m.media-amazon.com/images/I/61Z5KgMLbgL._SL1080_.jpg"
+        },
+        {
+            "id":25,
+            "name":"ZEBRONICS PRO Series Y NBC 1S, Intel Core 11th Gen",
+            "model":"Zeb-Nbc 1S (8GB) Silver",
+            "brand":"ZEBRONICS",
+            "price":91742,
+            "description":"ZEBRONICS PRO Series Y NBC 1S, Intel Core 11th Gen i3 Processor 8GB RAM & 512GB SSD Laptop, 15.6 Inch (39.6 CM), IPS Display, Ultra Slim, 38.5Wh Large Battery, Windows 11, Silver, 1.76 Kg ",
+            "image":"https://m.media-amazon.com/images/I/71jR5CcneQL._SL1500_.jpg"
+        },
+        {
+            "id":26,
+            "name":"ZEBRONICS PRO Series Z NBC 5S, Intel Core 12th Gen i7",
+            "model":"ZEB-NBC 5S 16GB",
+            "brand":"ZEBRONICS",
+            "price":41990,
+            "description":"ZEBRONICS PRO Series Z NBC 5S, Intel Core 12th Gen i7 Processor 16GB RAM & 512GB SSD Laptop, 15.6 Inch (39.6CM), IPS 180° Display, Dolby Atmos, 38.5Wh Large Battery, Windows 11, Blue, 1.76 Kg  ",
+            "image":"https://m.media-amazon.com/images/I/71MxpK5IWWL._SL1500_.jpg"
+        },
+        {
+            "id":27,
+            "name":"ASUS Vivobook S 15 OLED (2023), Intel Core EVO i5",
+            "model":"Vivobook S 15 OLED (2023)",
+            "brand":"ASUS",
+            "price":76990,
+            "description":"ASUS Vivobook S 15 OLED (2023), Intel Core EVO i5-13500H 13th Gen, 15.6 Thin & Light Laptop (16GB/512GB SSD/Iris Xe/Win 11/Office 2021/75WHr/Blue/1.7 kg) S5504VA-MA541WS ",
+            "image":"https://m.media-amazon.com/images/I/71QakyeZmKL._SL1500_.jpg"
         }
     ]
 }

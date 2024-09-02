@@ -30,8 +30,7 @@ const MyCart = () => {
         <tr>
           <td> {sno} </td>
           <td>
-            {" "}
-            <img src={key.image} width="100%" height="130" />{" "}
+            <img src={key.image} width="130px" height="130" />{" "}
           </td>
           <td>{key.name} </td>
           <td>{key.brand} </td>
@@ -42,7 +41,7 @@ const MyCart = () => {
             </p>
           </td>
           <td>{key.price} </td>
-          <th>
+          <td>
             <FaMinusCircle
               onClick={() => {
                 decQnty(key.id);
@@ -58,7 +57,7 @@ const MyCart = () => {
               }}
               style={{ cursor: "pointer" }}
             />
-          </th>
+          </td>
           <th>{key.price * key.qnty}</th>
           <td>
             <Button
@@ -87,11 +86,11 @@ const MyCart = () => {
       </center>
       <br />
       <div style={{padding:'0px 20px'}}>
-      <Table responsive="sm">
+      <Table responsive>
         <thead>
           <tr>
             <th>S.No</th>
-            <th></th>
+            <th>Product Image</th>
             <th>Product Name</th>
             <th>Brand</th>
             <th>Model </th>
@@ -113,11 +112,11 @@ const MyCart = () => {
             <th></th>
             <th></th>
             <th></th>
-            <th width="200" style={{ color: "green", fontSize: "20px" }}>
+            <th width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
               {" "}
               Grand Total:{" "}
             </th>
-            <th style={{ color: "green", fontSize: "20px" }}> {grandTotal} </th>
+            <th style={{ color: "#6868b3", fontSize: "20px" }}> {grandTotal}{".00₹"} </th>
             <td>
               <img
                 src="https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk"
