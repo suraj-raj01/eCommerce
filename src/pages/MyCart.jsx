@@ -61,7 +61,7 @@ const MyCart = () => {
           <th>{key.price * key.qnty}</th>
           <td>
             <Button
-              var="secondary"
+              variant="outline-primary"
               onClick={() => {
                 dataDelete(key.id);
               }}

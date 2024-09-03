@@ -242,6 +242,15 @@
             "price":76990,
             "description":"ASUS Vivobook S 15 OLED (2023), Intel Core EVO i5-13500H 13th Gen, 15.6 Thin & Light Laptop (16GB/512GB SSD/Iris Xe/Win 11/Office 2021/75WHr/Blue/1.7 kg) S5504VA-MA541WS ",
             "image":"https://m.media-amazon.com/images/I/71QakyeZmKL._SL1500_.jpg"
+        },
+        {
+            "id":28,
+            "name":"ASUS TUF Gaming A15 (2023) 90WHr Battery",
+            "model":"TUF Gaming A15 (2023)",
+            "brand":"ASUS",
+            "price":99990,
+            "description":"ASUS TUF Gaming A15 (2023) 90WHr Battery, AMD Ryzen 7 7735HS AI Powered, 15.6 FHD 144Hz, 6GB RTX 4050, Gaming Laptop (16GB/512GB SSD/Windows 11//1-Zone RGB/Gray/2.20 Kg), FA577NU-LP082W ",
+            "image":"https://m.media-amazon.com/images/I/716ThrQ2TsL._SL1500_.jpg"
         }
     ]
 }

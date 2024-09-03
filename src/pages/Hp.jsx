@@ -50,15 +50,18 @@ const HP = () => {
             <h4 style={{ color: "blue", fontSize: "14px" }}>
               {" "}
               Brand : {key.brand} 
-               <p style={{fontWeight:'bold',color:'red',padding:'5px 0px 0px 0px'}}> Model : {key.model}</p>
+               <p style={{fontWeight:'bold',color:'green',padding:'5px 0px 0px 0px'}}> Modelgreen : {key.model}</p>
             </h4>
             <Card.Text>{key.description}</Card.Text>
-            <h4 style={{ color: "red", fontSize: "16px" }}>
+            <h4 style={{ color: "green", fontSize: "16px" }}>
               {" "}
-              Price : {key.price}{" "}
+              <p style={{ fontWeight: "bold", color: "#6868b3" }}>
+                Price : {key.price}
+                {".00 ₹"}
+              </p>
             </h4>
             <Button
-              variant="primary"
+              variant="outline-primary"
               onClick={() => {
                 addDataToCart(
                   key.id,

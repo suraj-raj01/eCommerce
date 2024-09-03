@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import MyCart from "./pages/MyCart";
-import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import Products from "./pages/Products";
@@ -17,6 +16,8 @@ import Zebronics from "./pages/Zebronics";
 import Login from "./pages/Login";
 import ProductSearch from "./pages/ProductSearch";
 import Registeration from "./pages/Register";
+import Services from "./pages/Services";
+import Shop from "./pages/Shop";
 const App=()=>{
   return(
     <>
@@ -33,10 +34,11 @@ const App=()=>{
         <Route path="acer" element={<Acer/>}/>
         <Route path="zebronics" element={<Zebronics/>}/>
         <Route path="asus" element={<Asus/>}/>
-        <Route path="contact" element={<Contact/>}/>
         <Route path="about" element={<About/>}/>
+        <Route path="services" element={<Services/>}/>
         <Route path="blogs" element={<Blogs/>}/>
         <Route path="products" element={<Products/>}/>
+        <Route path="shop" element={<Shop/>}/>
         <Route path="details/:id" element={<Details/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Registeration/>}/>

@@ -45,6 +45,9 @@ const TopMenu = () => {
               <Nav.Link as={Link} to="products">
                 Products
               </Nav.Link>
+              <Nav.Link as={Link} to="shop">
+                Shop
+              </Nav.Link>
 
               <NavDropdown title="Brands" id="collapsible-nav-dropdown">
                 <NavDropdown.Item as={Link} to="dell">
@@ -69,11 +72,11 @@ const TopMenu = () => {
                   ZEBRONICS
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="contact">
-                Contact
-              </Nav.Link>
               <Nav.Link as={Link} to="blogs">
                 Blogs
+              </Nav.Link>
+              <Nav.Link as={Link} to="services">
+                Services
               </Nav.Link>
               <Nav.Link as={Link} to="about">
                 About

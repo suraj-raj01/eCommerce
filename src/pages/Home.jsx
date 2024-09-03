@@ -81,7 +81,7 @@ const Home = () => {
               }}
             >
               <Button
-                variant="primary"
+                variant="outline-primary"
                 onClick={() => {
                   addDataToCart(
                     key.id,

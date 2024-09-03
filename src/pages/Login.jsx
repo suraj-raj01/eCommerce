@@ -19,10 +19,10 @@ const Login = () => {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <p id="forget">forgott password</p>
-          <Button variant="primary">
+          <Button variant="outline-primary">
             Login
           </Button>
-          <Button variant="primary"  onClick={Register}>
+          <Button variant="outline-primary"  onClick={Register}>
             Register
           </Button>
         </Form>

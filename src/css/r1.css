@@ -48,19 +48,16 @@
 #card{
     width: 320px;
     margin-top: 20px;
-    transition: .8s;
 }
 #card img{
     transition: .8s;
+    cursor: pointer;
 }
 #card img:hover{
     transform: scale(.9);
     transition: .8s;
 }
-#card:hover{
-    transform: scale(1.01);
-    transition: .8s;
-}
+
 #category{
     padding: 5px 0px 0px 0px;
     font-weight: bold;
@@ -131,4 +128,77 @@ Form Button{
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
+}
+#services{
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+#shop{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+#shop #filter-data{
+    width: 15%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 2px;
+}
+#shop input{
+    width: 50px;
+}
+#radio{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 0px;
+}
+#filter-btn{
+    margin-top: 10px;
+    width: 80px;
+}
+
+#shop #show-data{
+    width: 78%;
+}
+
+#range input{
+    width: 130px;
+}
+#range{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: bold;
+}
+
+@media(max-width:500px){
+    #shop #filter-data h5{
+        font-size: 12px;
+    }
+    #radio{
+        font-size: 10px;
+        width: 100%;
+    }
+    #shop input{
+        width: 20px;
+    }
+    #filter-btn{
+        margin-top: 10px;
+        width: 60px;
+    }
 }
