@@ -5,7 +5,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
-import { IoSearch } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -33,9 +32,9 @@ const TopMenu = () => {
           <Navbar.Brand
             as={Link}
             to="home"
-            style={{ fontSize: "30px", fontWeight: "bold", color: "#6868b3" }}
+            style={{ fontSize: "20px", fontWeight: "bold", color: "#6868b3" }}
           >
-            Laptop
+            LAPTOPSHOP
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

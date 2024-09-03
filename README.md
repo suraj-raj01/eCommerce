@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 
 # Core Features:
-<hr>
+
 
 - **Product Search:**
 
@@ -27,7 +27,7 @@ Currently, two official plugins are available:
 - **Order History:** 
 - Allow users to view their past orders and order details.
 # User Experience Enhancements:
-<hr>
+
 
 - **Responsive Design:** 
 - Ensure your app looks and functions well on different screen sizes (desktop, tablet, mobile).

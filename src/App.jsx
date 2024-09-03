@@ -16,7 +16,7 @@ import Details from "./pages/Details";
 import Zebronics from "./pages/Zebronics";
 import Login from "./pages/Login";
 import ProductSearch from "./pages/ProductSearch";
-import Register from "./Components/Register";
+import Registeration from "./pages/Register";
 const App=()=>{
   return(
     <>
@@ -39,7 +39,7 @@ const App=()=>{
         <Route path="products" element={<Products/>}/>
         <Route path="details/:id" element={<Details/>}/>
         <Route path="login" element={<Login/>}/>
-        <Route path="register" element={<Register/>}/>
+        <Route path="register" element={<Registeration/>}/>
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
        </Route>
      </Routes>
