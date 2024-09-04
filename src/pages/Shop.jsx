@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addcartData } from "../addtocartSlice";
 const Shop = () => {
- const [mycat, setCatVal] = useState("");
- const [mydata, setMydata] = useState([]);
+  const [mycat, setCatVal] = useState("");
+  const [mydata, setMydata] = useState([]);
   const dispatch = useDispatch();
 
   const loadData = () => {
@@ -23,13 +23,13 @@ const Shop = () => {
     loadData();
   }, []);
 
-const catHandle = () =>{
+  const catHandle = () => {
     let api = `http://localhost:3000/products/?brand=${mycat}`;
     axios.get(api).then((res) => {
       setMydata(res.data);
     });
-}
-catHandle();
+  };
+  catHandle();
   const addDataToCart = (id, name, model, brand, price, desc, image) => {
     dispatch(
       addcartData({
@@ -45,20 +45,35 @@ catHandle();
     );
   };
   const navigate = useNavigate();
-  const details = (id)=>{
+  const details = (id) => {
     navigate(`/details/${id}`);
-  }
+  };
   const ans = mydata.map((key) => {
     return (
       <>
         <Card id="card">
-          <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}}/>
+          <Card.Img
+            variant="top"
+            src={key.image}
+            onClick={() => {
+              details(key.id);
+            }}
+          />
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
             <h4 style={{ color: "blue", fontSize: "14px" }}>
               {" "}
-              Brand : {key.brand} 
-               <p style={{fontWeight:'bold',color:'green',padding:'5px 0px 0px 0px'}}> Model : {key.model}</p>
+              Brand : {key.brand}
+              <p
+                style={{
+                  fontWeight: "bold",
+                  color: "green",
+                  padding: "5px 0px 0px 0px",
+                }}
+              >
+                {" "}
+                Model : {key.model}
+              </p>
             </h4>
             <Card.Text>{key.description}</Card.Text>
             <h4 style={{ color: "green", fontSize: "16px" }}>
@@ -94,9 +109,17 @@ catHandle();
       <div id="shop">
         {/* filters */}
         <div id="filter-data">
-          <h5 style={{fontWeight:'bold',marginTop:'30px',marginBottom:'20px'}}>Search By Brands</h5>
+          <h5
+            style={{
+              fontWeight: "bold",
+              marginTop: "30px",
+              marginBottom: "20px",
+            }}
+          >
+            Search By Brands
+          </h5>
           <div id="radio">
-            Dell 
+            Dell
             <input
               type="radio"
               value="Dell"
@@ -107,7 +130,7 @@ catHandle();
             />
           </div>
           <div id="radio">
-            Apple 
+            Apple
             <input
               type="radio"
               value="Apple"
@@ -118,7 +141,7 @@ catHandle();
             />
           </div>
           <div id="radio">
-            Acer 
+            Acer
             <input
               type="radio"
               value="Acer"
@@ -129,7 +152,7 @@ catHandle();
             />
           </div>
           <div id="radio">
-            ASUS 
+            ASUS
             <input
               type="radio"
               value="ASUS"
@@ -140,7 +163,7 @@ catHandle();
             />
           </div>
           <div id="radio">
-            HP 
+            HP
             <input
               type="radio"
               value="HP"
@@ -151,7 +174,7 @@ catHandle();
             />
           </div>
           <div id="radio">
-            Lenovo 
+            Lenovo
             <input
               type="radio"
               value="Lenovo"
@@ -162,18 +185,85 @@ catHandle();
             />
           </div>
           <div>
-            <Button size="sm" id="filter-btn" variant="outline-primary" onClick={catHandle}>
+            {/* <Button size="sm" id="filter-btn" variant="outline-primary" onClick={catHandle}>
               Search{" "}
-            </Button>
+            </Button> */}
           </div>
           <br />
-          <h5 style={{fontWeight:'bold',marginTop:'30px',marginBottom:'20px'}}>Search By Range</h5>
-          <div id="range">
-            <div style={{display:'flex',justifyContent:'space-between',width:'100%'}}>
-                <span>0</span>
-                <span>0</span>
-            </div>
-            <input type="range" min='0' max='100000'/>
+          <h5
+            style={{
+              fontWeight: "bold",
+              marginTop: "30px",
+              marginBottom: "20px",
+            }}
+          >
+            Search By Price
+          </h5>
+          <div id="radio">
+            20000 and ⇣
+            <input
+              type="radio"
+              value="Dell"
+              name="cat"
+              onChange={(e) => {
+                setCatVal(e.target.value);
+              }}
+            />
+          </div>
+          <div id="radio">
+            Apple
+            <input
+              type="radio"
+              value="Apple"
+              name="cat"
+              onChange={(e) => {
+                setCatVal(e.target.value);
+              }}
+            />
+          </div>
+          <div id="radio">
+            Acer
+            <input
+              type="radio"
+              value="Acer"
+              name="cat"
+              onChange={(e) => {
+                setCatVal(e.target.value);
+              }}
+            />
+          </div>
+          <div id="radio">
+            ASUS
+            <input
+              type="radio"
+              value="ASUS"
+              name="cat"
+              onChange={(e) => {
+                setCatVal(e.target.value);
+              }}
+            />
+          </div>
+          <div id="radio">
+            HP
+            <input
+              type="radio"
+              value="HP"
+              name="cat"
+              onChange={(e) => {
+                setCatVal(e.target.value);
+              }}
+            />
+          </div>
+          <div id="radio">
+            Lenovo
+            <input
+              type="radio"
+              value="Lenovo"
+              name="cat"
+              onChange={(e) => {
+                setCatVal(e.target.value);
+              }}
+            />
           </div>
         </div>
 
@@ -181,7 +271,11 @@ catHandle();
         <div id="show-data">
           <div id="proHeading">
             <br />
-            <h1 style={{ fontWeight: "bold" }}> Our Premium <span style={{color:'green'}}>"{mycat}"</span> Laptops</h1>
+            <h1 style={{ fontWeight: "bold" }}>
+              {" "}
+              Our Premium <span style={{ color: "green" }}>'{mycat}'</span>{" "}
+              Laptops
+            </h1>
           </div>
 
           <div id="homeProduct">{ans}</div>

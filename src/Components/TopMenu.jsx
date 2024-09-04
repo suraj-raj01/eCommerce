@@ -54,7 +54,7 @@ const TopMenu = () => {
                   DELL
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="mac">
-                  MAC
+                  APPLE
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="lenovo">
                   LENOVO
