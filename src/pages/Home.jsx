@@ -65,7 +65,7 @@ const Home = () => {
               Brand : {key.brand} <br />
               <p id="category">Model : {key.model}</p>
             </h4>
-            <Card.Text>{key.description}</Card.Text>
+            <Card.Text >{key.description}</Card.Text>
             <h4 style={{ color: "red", fontSize: "16px" }}>
               {" "}
               <p style={{ fontWeight: "bold", color: "#6868b3" }}>

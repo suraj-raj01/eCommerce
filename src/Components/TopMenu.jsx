@@ -72,8 +72,8 @@ const TopMenu = () => {
                   ZEBRONICS
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="blogs">
-                Blogs
+              <Nav.Link as={Link} to="offer">
+                Offer
               </Nav.Link>
               <Nav.Link as={Link} to="services">
                 Services

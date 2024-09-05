@@ -1,8 +1,21 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-
+import { useNavigate } from 'react-router-dom';
 
 const Footer=()=>{
+  const navigate = useNavigate();
+  const Dell = () =>{
+    navigate("/dell");
+  }
+  const Lenovo = () =>{
+    navigate("/lenovo");
+  }
+  const Acer = () =>{
+    navigate("/acer");
+  }
+  const Apple = () =>{
+    navigate("/mac");
+  }
     return(
         <>
         
@@ -43,30 +56,29 @@ const Footer=()=>{
                 LaptopShop
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+                "Welcome To Laptopshop.com" Buy Laptops Online | Best Prices, Top Brands Premium Laptops | Gaming, Business, & More Discover Your Perfect Laptop
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a onClick={Dell} href='#' className='text-reset'>
                   Dell
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a onClick={Lenovo} href='#!' className='text-reset'>
                   Lenovo
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a onClick={Acer} href='#!' className='text-reset'>
                   Acer
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a onClick={Apple} href='#!' className='text-reset'>
                   Apple
                 </a>
               </p>

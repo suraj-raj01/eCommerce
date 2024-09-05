@@ -15,7 +15,7 @@ const addtoCart= createSlice({
             })
             if (myCart.length>=1)
             {
-                message.warning("This Product Aleready Added!!!")
+                message.error("This Product Already Added!!!")
             }
             else
             {

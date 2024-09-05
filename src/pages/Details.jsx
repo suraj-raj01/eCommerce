@@ -46,7 +46,7 @@ const Details = () => {
           </div>
           <div id="desc">
             <p style={{ fontSize: "24px" }}>{key.description}</p>
-            <h4 style={{ color: "green",fontWeight:'bold' }}>Price : {key.price}{".00₹"}</h4>
+            <h4 style={{ color: "#6868b3",fontWeight:'bold' }}>Price : {key.price}{".00₹"}</h4>
             <div style={{fontWeight:''}}>
               Name : {key.name}
               <br />
@@ -57,7 +57,7 @@ const Details = () => {
               Processor : {}
             </div><br />
             <Button
-            variant="primary"
+            variant="outline-primary"
             onClick={() => {
               addDataToCart(
                 key.id,
