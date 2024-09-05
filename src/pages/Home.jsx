@@ -24,6 +24,7 @@ const Home = () => {
     loadData();
   }, []);
 
+
   const addDataToCart = (id, name, model, brand, price, desc, image) => {
     dispatch(
       addcartData({
@@ -60,7 +61,7 @@ const Home = () => {
             >
               {key.name}
             </p>
-            <h4 style={{ color: "blue", fontSize: "14px" }}>
+            <h4 style={{ color: "blue", fontSize: "14px",fontWeight:'bold' }}>
               {" "}
               Brand : {key.brand} <br />
               <p id="category">Model : {key.model}</p>
@@ -115,9 +116,9 @@ const Home = () => {
         }}
       >
         <marquee direction="left" scrollamount="15">
-          "Welcome To Laptopshop.com"  Buy Laptops Online | Best Prices, Top Brands
+          <span>"Welcome To Laptopshop.com"  Buy Laptops Online | Best Prices, Top Brands
           Premium Laptops | Gaming, Business, & More Discover Your Perfect
-          Laptop
+          Laptop</span>
         </marquee>
       </div>
       <div style={{ width: "98%", margin: "0 auto" }}>
@@ -210,6 +211,7 @@ const Home = () => {
       </div>
 
       <div id="homeProduct">{ans}</div>
+
     </>
   );
 };

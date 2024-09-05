@@ -11,7 +11,7 @@ const ProductSearch = () => {
   const [mydata, setMydata] = useState([]);
   const dispatch = useDispatch();
   const { txtdata } = useParams();
-  const [isLoading,setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -83,9 +83,9 @@ const ProductSearch = () => {
               <h4 style={{ color: "green", fontSize: "16px" }}>
                 {" "}
                 <p style={{ fontWeight: "bold", color: "#6868b3" }}>
-                Price : {key.price}
-                {".00 ₹"}
-              </p>
+                  Price : {key.price}
+                  {".00 ₹"}
+                </p>
               </h4>
               <Button
                 variant="primary"
@@ -116,8 +116,18 @@ const ProductSearch = () => {
         <br />
         <h1 style={{ fontWeight: "bold" }}> Product Search Laptops</h1>
       </div>
-        {isLoading?(<center><img src="https://www.tothenew.com/blog/wp-ttn-blog/uploads/2016/01/ajax-loader.gif" height='200px' width='300px' alt="" /></center>):(<div id="homeProduct">{ans}</div>)}
-    
+      {isLoading ? (
+        <center>
+          <img
+            src="https://www.tothenew.com/blog/wp-ttn-blog/uploads/2016/01/ajax-loader.gif"
+            height="200px"
+            width="300px"
+            alt=""
+          />
+        </center>
+      ) : (
+        <div id="homeProduct">{ans}</div>
+      )}
     </>
   );
 };

@@ -47,7 +47,7 @@ const Lenovo = () => {
           <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}}/>
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
-            <h4 style={{ color: "blue", fontSize: "14px" }}>
+            <h4 style={{ color: "blue", fontSize: "14px",fontWeight:'bold' }}>
               {" "}
               Brand : {key.brand} 
                <p style={{fontWeight:'bold',color:'green',padding:'5px 0px 0px 0px'}}> Model : {key.model}</p>

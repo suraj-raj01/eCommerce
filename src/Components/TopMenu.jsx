@@ -25,6 +25,11 @@ const TopMenu = () => {
   const handleSearch = () =>{
     navigate(`/productsearch/${searchData}`)
   }
+
+  const offers = () =>{
+    navigate("/offer")
+  }
+
   return (
     <>
       <Navbar collapseOnSelect expand="lg" id="topmenu">
@@ -37,8 +42,11 @@ const TopMenu = () => {
             LAPTOPSHOP
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '500px',backgroundColor:'white',padding:'10px' }}
+            navbarScroll
+            >
               <Nav.Link as={Link} to="home">
                 Home
               </Nav.Link>
@@ -83,7 +91,7 @@ const TopMenu = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <div style={{ display: "flex", gap: "5px" }}>
+              <div style={{ display: "flex", gap: "5px",backgroundColor:'white',padding:'10px' }}>
               <Nav.Link
                   
                   style={{ textDecoration: "none", color: "#6868b3" }}
@@ -124,6 +132,10 @@ const TopMenu = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/* // position fixed Item */}
+        <div id="offers">
+          <span onClick={offers}>offers</span>
+        </div>
     </>
   );
 };

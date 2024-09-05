@@ -27,12 +27,9 @@
     box-shadow: 0px 0px 2px;
 }
 #topmenu a{
-    font-weight: 550;   
+    font-weight: 500;   
 }
-#responsive-navbar-nav{
-    background-color: white;
-    padding: 5px 10px;
-}
+
 #input{
     border: 1px solid #6868b3;
     padding: 3px 5px;
@@ -50,6 +47,7 @@
     margin-top: 20px;
     text-align: start;
 }
+
 #card img{
     transition: .8s;
     cursor: pointer;
@@ -149,7 +147,7 @@ Form Button{
 
 #shop #filter-data{
     width: 15%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -202,4 +200,30 @@ Form Button{
         margin-top: 10px;
         width: 60px;
     }
+}
+marquee{
+    font-style: italic;
+    font-weight: normal;
+    color: gray;
+}
+#offers{
+    position: fixed;
+    top: 80%;
+    right: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px;
+    padding: 15px 7px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #008000;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: .5s;
+}
+#offers:hover{
+    background-color: white;
+    box-shadow: 0px 0px 4px;
+    color: green;
+    transition: .5s;
 }
