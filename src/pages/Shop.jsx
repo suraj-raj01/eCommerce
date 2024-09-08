@@ -356,7 +356,7 @@ const Shop = () => {
     }
 
     if (myPrice == 60000) {
-      if (key.price > 50000) {
+      if (key.price > 50000 && key.price<=60000) {
         return (
           <>
             <Card id="card">
@@ -414,8 +414,8 @@ const Shop = () => {
       }
     }
 
-    if (myPrice == 20000) {
-      if (key.price > 0 && key.price <= 20000) {
+    if (myPrice == 70000) {
+      if (key.price > 60000) {
         return (
           <>
             <Card id="card">
@@ -639,7 +639,7 @@ const Shop = () => {
             60000 & Above
             <input
               type="radio"
-              value="60000"
+              value="70000"
               name="cat"
               onChange={(e) => {
                 setMyPrice(e.target.value);

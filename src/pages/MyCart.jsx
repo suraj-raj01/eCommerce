@@ -35,12 +35,12 @@ const MyCart = () => {
           <td>{key.name} </td>
           <td>{key.brand} </td>
           <td>{key.model} </td>
-          <td style={{ fontSize: "12px", width: "300px" }}>
-            <p style={{ fontStyle: "italic", fontSize: "12px" }}>
+          <td style={{ fontSize: "13px",padding:"0px 10px", width:'300px' }}>
+            <p>
               {key.description}
             </p>
           </td>
-          <td>{key.price} </td>
+          <td style={{fontWeight:'bold'}}>{key.price} {"₹"}</td>
           <td>
             <FaMinusCircle
               onClick={() => {
@@ -48,9 +48,8 @@ const MyCart = () => {
               }}
               style={{ cursor: "pointer" }}
             />
-            <span style={{ marginLeft: "5px", marginRight: "5px" }}>
-              {key.qnty}
-            </span>
+              <span style={{fontWeight:'bold',padding:'5px 5px'}}>{key.qnty}</span>
+          
             <FaPlusCircle
               onClick={() => {
                 incQnty(key.id);
@@ -58,7 +57,7 @@ const MyCart = () => {
               style={{ cursor: "pointer" }}
             />
           </td>
-          <th>{key.price * key.qnty}</th>
+          <th>{key.price * key.qnty}{" ₹"}</th>
           <td>
             <Button
               variant="outline-primary"
@@ -98,7 +97,7 @@ const MyCart = () => {
             <th>Price</th>
             <th>Quantity</th>
             <th>Total</th>
-            <td></td>
+            <th>Remove</th>
           </tr>
         </thead>
         <tbody>

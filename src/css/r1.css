@@ -32,15 +32,27 @@
 
 #input{
     border: 1px solid #6868b3;
-    padding: 3px 5px;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right-color: transparent;
+    width: 260px;
 }
 #srchbtn{
     border: none;
-    padding: 3px 10px;
+    padding: 5px 10px;
     border: 1px solid #6868b3;
     color: #6868b3;
     background-color: transparent;
     font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s;
+}
+#srchbtn:hover{
+    background-color: #6868b3;
+    color: white;
+    transition: .5s;
 }
 #card{
     width: 320px;
@@ -203,27 +215,27 @@ Form Button{
 }
 marquee{
     font-style: italic;
-    font-weight: normal;
-    color: gray;
+    font-weight: 550;
+    color: #686868;
 }
 #offers{
     position: fixed;
     top: 80%;
     right: 10px;
     border-radius: 50px;
-    box-shadow: 0px 0px 4px;
+    box-shadow: 0px 0px 4px green;
     padding: 15px 7px;
     font-weight: bold;
     font-size: 14px;
-    background-color: #008000;
+    background-color: #00800084;
     color: white;
     cursor: pointer;
     z-index: 10;
     transition: .5s;
 }
 #offers:hover{
-    background-color: white;
+    background-color: green;
     box-shadow: 0px 0px 4px;
-    color: green;
+    color: white;
     transition: .5s;
 }

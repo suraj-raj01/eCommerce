@@ -47,7 +47,7 @@ const Offer = () => {
     return (
       <>
         <Card id="card" >
-          <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}}/>
+          <Card.Img variant="outline-success" src={key.image} onClick={()=>{details(key.id)}}/>
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
             <h4 style={{ color: "blue", fontSize: "14px",fontWeight:'bold' }}>
