@@ -115,7 +115,7 @@ const Home = () => {
           fontWeight: "600",
         }}
       >
-        <marquee direction="left" scrollamount="15">
+        <marquee direction="left" scrollamount="12">
           <span>"Welcome To Laptopshop.com"  Buy Laptops Online | Best Prices, Top Brands
           Premium Laptops | Gaming, Business, & More Discover Your Perfect
           Laptop</span>

@@ -119,9 +119,9 @@ const ProductSearch = () => {
       {isLoading ? (
         <center>
           <img
-            src="https://www.tothenew.com/blog/wp-ttn-blog/uploads/2016/01/ajax-loader.gif"
-            height="200px"
-            width="300px"
+            src="https://discuss.wxpython.org/uploads/default/original/2X/6/6d0ec30d8b8f77ab999f765edd8866e8a97d59a3.gif"
+            height="60px"
+            width="60px"
             alt=""
           />
         </center>

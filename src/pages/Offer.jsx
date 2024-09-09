@@ -91,7 +91,7 @@ const Offer = () => {
     <>
         <br />
       <div id="proHeading">
-        <h1 style={{fontWeight:'bold'}}> Todays Best Offer<sup style={{padding:'5px',fontStyle:'italic', fontWeight:'normal',backgroundColor:'#6868b3',borderRadius:'100%',color:'white'}}>new</sup></h1>
+        <h1 style={{fontWeight:'bold'}}> Todays Best Offer<sup style={{padding:'5px',fontStyle:'italic', fontWeight:'normal',backgroundColor:'red',borderRadius:'100%',color:'white'}}>new</sup></h1>
       </div>
 
       <div id="homeProduct">{ans}</div>

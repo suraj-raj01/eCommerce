@@ -14,10 +14,10 @@ import Details from "./pages/Details";
 import Zebronics from "./pages/Zebronics";
 import Login from "./pages/Login";
 import ProductSearch from "./pages/ProductSearch";
-import Registeration from "./pages/Register";
 import Services from "./pages/Services";
 import Shop from "./pages/Shop";
 import Offer from "./pages/Offer";
+import Registration from "./pages/Registration";
 const App=()=>{
   return(
     <>
@@ -41,7 +41,7 @@ const App=()=>{
         <Route path="shop" element={<Shop/>}/>
         <Route path="details/:id" element={<Details/>}/>
         <Route path="login" element={<Login/>}/>
-        <Route path="register" element={<Registeration/>}/>
+        <Route path="register" element={<Registration/>}/>
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
        </Route>
      </Routes>

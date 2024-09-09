@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaCoffee, FaShoppingCart } from "react-icons/fa";
+import {FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { useSelector } from "react-redux";
@@ -37,7 +37,7 @@ const TopMenu = () => {
           <Navbar.Brand
             as={Link}
             to="home"
-            style={{ fontSize: "20px", fontWeight: "bold", color: "#6868b3",fontFamily:'impact'}}
+            style={{ fontSize: "20px", fontWeight: "800", color: "#6868b3"}}
           >
             LAPTOPSHOP
           </Navbar.Brand>
