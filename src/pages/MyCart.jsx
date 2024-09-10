@@ -4,7 +4,16 @@ import { Button } from "react-bootstrap";
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 import { qntyInc, qntyDec, dataDel } from "../addtocartSlice";
+import { useNavigate } from "react-router-dom";
 const MyCart = () => {
+
+  // checkout
+  const navigate = useNavigate();
+  const checkOut = () =>{
+    navigate("/checkout")
+  }
+
+
   const Data = useSelector((state) => state.addCart.cart);
   console.log(Data);
   const dispatch = useDispatch();
@@ -35,12 +44,12 @@ const MyCart = () => {
           <td>{key.name} </td>
           <td>{key.brand} </td>
           <td>{key.model} </td>
-          <td style={{ fontSize: "13px",padding:"0px 10px", width:'300px' }}>
-            <p>
-              {key.description}
-            </p>
+          <td style={{ fontSize: "13px", padding: "0px 10px", width: "300px" }}>
+            <p>{key.description}</p>
           </td>
-          <td style={{fontWeight:'bold'}}>{key.price} {"₹"}</td>
+          <td style={{ fontWeight: "bold",width:'120px' }}>
+            {key.price} {"₹"}
+          </td>
           <td>
             <FaMinusCircle
               onClick={() => {
@@ -48,8 +57,10 @@ const MyCart = () => {
               }}
               style={{ cursor: "pointer" }}
             />
-              <span style={{fontWeight:'bold',padding:'5px 5px'}}>{key.qnty}</span>
-          
+            <span style={{ fontWeight: "bold", padding: "5px 5px" }}>
+              {key.qnty}
+            </span>
+
             <FaPlusCircle
               onClick={() => {
                 incQnty(key.id);
@@ -57,7 +68,10 @@ const MyCart = () => {
               style={{ cursor: "pointer" }}
             />
           </td>
-          <th>{key.price * key.qnty}{" ₹"}</th>
+          <th>
+            {key.price * key.qnty}
+            {" ₹"}
+          </th>
           <td>
             <Button
               variant="outline-primary"
@@ -84,53 +98,49 @@ const MyCart = () => {
         <hr />
       </center>
       <br />
-      <div style={{padding:'0px 20px'}}>
-      <Table responsive>
-        <thead>
-          <tr>
-            <th>S.No</th>
-            <th>Product Image</th>
-            <th>Product Name</th>
-            <th>Brand</th>
-            <th>Model </th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-        <tbody>
-          {ans}
+      <div style={{ padding: "0px 20px" }}>
+        <Table responsive id="mycart">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Product Image</th>
+              <th>Product Name</th>
+              <th>Brand</th>
+              <th>Model </th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            {ans}
 
-          <tr>
-            <th></th>
-            <th> </th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
-              {" "}
-              Grand Total:{" "}
-            </th>
-            <th style={{ color: "#6868b3", fontSize: "20px" }}> {grandTotal}{".00₹"} </th>
-            <td>
-              <img
-                src="https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk"
-                alt=""
-                height="30px"
-              />
-              <img
-                src="https://pbs.twimg.com/profile_images/1615271089705463811/v-emhrqu_400x400.png"
-                height="25px"
-                alt=""
-              />
-            </td>
-          </tr>
-        </tbody>
-      </Table>
+            <tr>
+              <th></th>
+              <th> </th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
+                {" "}
+                Grand Total:{" "}
+              </th>
+              <th style={{ color: "#6868b3", fontSize: "20px" }}>
+                {" "}
+                {grandTotal}
+                {".00₹"}{" "}
+              </th>
+              <th></th>
+            </tr>
+          </tbody>
+        </Table>
+        <div id="checkout">
+          <Button variant="outline-primary" onClick={checkOut}>CheckOut</Button>
+        </div>
       </div>
     </>
   );

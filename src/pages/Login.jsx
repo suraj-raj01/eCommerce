@@ -13,11 +13,19 @@ const Login = () => {
     const [name,setName] = useState("");
     const [pass,setPass] = useState("");
     const handleLogin = () =>{
+      if(name==""){
+        toast.warning("Please enter your username")
+        return false;
+      }
+      if(pass==""){
+        toast.warning("Please enter your password")
+      }
+      else{
       let api = `http://localhost:3000/Login?name=${name}`;
       axios.get(api).then((res)=>{
         if(res.data.length>=1){
           if(res.data[0].password == pass){
-            toast.success(`welcome ,${res.data[0].name.toUpperCase()}`);
+            toast.success(`WELCOME , "${res.data[0].name.toUpperCase()}"`);
           }else{
             toast.error("Wrong Password!!");
           }
@@ -26,6 +34,7 @@ const Login = () => {
           toast.error("Invalid username!!!")
         }
       })
+    }
     }
 
   const Register = () =>{

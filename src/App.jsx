@@ -18,6 +18,7 @@ import Services from "./pages/Services";
 import Shop from "./pages/Shop";
 import Offer from "./pages/Offer";
 import Registration from "./pages/Registration";
+import CheckOut from "./pages/CheckOut";
 const App=()=>{
   return(
     <>
@@ -43,6 +44,7 @@ const App=()=>{
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Registration/>}/>
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
+        <Route path="checkout" element={<CheckOut/>}/>
        </Route>
      </Routes>
     </BrowserRouter>
