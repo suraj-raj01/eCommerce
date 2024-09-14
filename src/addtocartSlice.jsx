@@ -20,6 +20,7 @@ const addtoCart= createSlice({
             else
             {
                 state.cart.push(action.payload);
+                message.success("Item added successfull!!")
             }
         },
 
