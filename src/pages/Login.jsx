@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { message } from "antd";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -14,24 +13,24 @@ const Login = () => {
     const [pass,setPass] = useState("");
     const handleLogin = () =>{
       if(name==""){
-        toast.warning("Please enter your username")
+        message.warning("Please enter your username")
         return false;
       }
       if(pass==""){
-        toast.warning("Please enter your password")
+        message.warning("Please enter your password")
       }
       else{
       let api = `http://localhost:3000/Login?name=${name}`;
       axios.get(api).then((res)=>{
         if(res.data.length>=1){
           if(res.data[0].password == pass){
-            toast.success(`WELCOME , "${res.data[0].name.toUpperCase()}"`);
+            message.success(`WELCOME , "${res.data[0].name.toUpperCase()}"`);
           }else{
-            toast.error("Wrong Password!!");
+            message.error("Wrong Password!!");
           }
         }
         else{
-          toast.error("Invalid username!!!")
+          message.error("Invalid username!!!")
         }
       })
     }
@@ -62,7 +61,6 @@ const Login = () => {
           </Button>
         </Form>
       </div>
-      <ToastContainer />
     </>
   );
 };
