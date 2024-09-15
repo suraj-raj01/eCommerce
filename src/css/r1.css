@@ -249,6 +249,28 @@ Form Button{
     font-weight: 700;
 }
 
+#mycart{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #d8d6d6;
+}
+
+#mycart th{
+    font-weight: bold;
+    background-color: #6868b3;
+}
+
+#myCart-img{
+    height: 130px;
+    width:130px;
+    cursor: pointer;
+    transition: .8s;
+}
+#myCart-img:hover{
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: .5s;
+}
 
 @media(max-width:500px){
     #shop #filter-data h5{
@@ -281,6 +303,9 @@ Form Button{
         height: 400px;
         width: 400px;
     }
+    #mycart{
+        width: 100%;
+    }
 }
 marquee{
     font-style: italic;
@@ -296,11 +321,12 @@ marquee{
     padding: 15px 7px;
     font-weight: bold;
     font-size: 14px;
-    background-color: #00800084;
-    color: white;
+    background-color: #0080006a;
+    color: seashell;
     cursor: pointer;
     z-index: 10;
     transition: .5s;
+    transform: rotate(320deg);
 }
 #offers:hover{
     background-color: green;
@@ -309,6 +335,3 @@ marquee{
     transition: .5s;
 }
 
-#mycart tr th{
-    font-weight: bold;
-}

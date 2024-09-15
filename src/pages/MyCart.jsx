@@ -12,7 +12,10 @@ const MyCart = () => {
   const checkOut = () =>{
     navigate("/checkout")
   }
-
+  // see details
+  const details = (id) =>{
+    navigate(`/details/${id}`)
+  }
 
   const Data = useSelector((state) => state.addCart.cart);
   console.log(Data);
@@ -39,7 +42,7 @@ const MyCart = () => {
         <tr>
           <td> {sno} </td>
           <td>
-            <img src={key.image} width="130px" height="130" />{" "}
+            <img src={key.image} id="myCart-img" onClick={()=>{details(key.id)}}/>{" "}
           </td>
           <td>{key.name} </td>
           <td>{key.brand} </td>
@@ -68,10 +71,10 @@ const MyCart = () => {
               style={{ cursor: "pointer" }}
             />
           </td>
-          <th>
+          <td>
             {key.price * key.qnty}
             {" ₹"}
-          </th>
+          </td>
           <td>
             <Button
               variant="outline-primary"
@@ -118,23 +121,23 @@ const MyCart = () => {
             {ans}
 
             <tr>
-              <th></th>
-              <th> </th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
                 {" "}
                 Grand Total:{" "}
-              </th>
-              <th style={{ color: "#6868b3", fontSize: "20px" }}>
+              </td>
+              <td style={{ color: "#6868b3", fontSize: "20px" }}>
                 {" "}
                 {grandTotal}
                 {".00₹"}{" "}
-              </th>
-              <th></th>
+              </td>
+              <td></td>
             </tr>
           </tbody>
         </Table>
