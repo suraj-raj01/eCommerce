@@ -25,6 +25,7 @@ const Login = () => {
         if(res.data.length>=1){
           if(res.data[0].password == pass){
             message.success(`WELCOME , "${res.data[0].name.toUpperCase()}"`);
+            navigate(`/dashboard/${res.data[0].name}`);
           }else{
             message.error("Wrong Password!!");
           }

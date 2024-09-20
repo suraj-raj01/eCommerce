@@ -103,7 +103,7 @@ const MyCart = () => {
       <br />
       <div style={{ padding: "0px 20px" }}>
         <Table responsive id="mycart">
-          <thead>
+          <thead id="mycart1">
             <tr>
               <th>S.No</th>
               <th>Product Image</th>
@@ -117,27 +117,27 @@ const MyCart = () => {
               <th>Remove</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="mycart2">
             {ans}
 
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
                 {" "}
                 Grand Total:{" "}
-              </td>
-              <td style={{ color: "#6868b3", fontSize: "20px" }}>
+              </th>
+              <th style={{ color: "#6868b3", fontSize: "20px" }}>
                 {" "}
                 {grandTotal}
                 {".00₹"}{" "}
-              </td>
-              <td></td>
+              </th>
+              <th></th>
             </tr>
           </tbody>
         </Table>

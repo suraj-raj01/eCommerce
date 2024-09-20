@@ -19,6 +19,7 @@ import Shop from "./pages/Shop";
 import Offer from "./pages/Offer";
 import Registration from "./pages/Registration";
 import CheckOut from "./pages/CheckOut";
+import DashBoard from "./pages/DashBoard";
 const App=()=>{
   return(
     <>
@@ -45,6 +46,7 @@ const App=()=>{
         <Route path="register" element={<Registration/>}/>
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
         <Route path="checkout" element={<CheckOut/>}/>
+        <Route path="dashboard/:userName" element={<DashBoard/>}/>
        </Route>
      </Routes>
     </BrowserRouter>

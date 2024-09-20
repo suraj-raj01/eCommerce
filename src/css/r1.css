@@ -255,9 +255,14 @@ Form Button{
     border: 1px solid #d8d6d6;
 }
 
-#mycart th{
+#mycart1 th{
     font-weight: bold;
-    background-color: #6868b3;
+    border: 1px solid #686868;
+    background-color: #d8d6d6;
+}
+#mycart2 th{
+    font-weight: bold;
+    background-color: #d8d6d6;
 }
 
 #myCart-img{
@@ -335,3 +340,11 @@ marquee{
     transition: .5s;
 }
 
+ #dashboard{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+ }
