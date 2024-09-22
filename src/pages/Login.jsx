@@ -24,6 +24,7 @@ const Login = () => {
       axios.get(api).then((res)=>{
         if(res.data.length>=1){
           if(res.data[0].password == pass){
+            localStorage.setItem("name",res.data[0].name.toUpperCase())
             message.success(`WELCOME , "${res.data[0].name.toUpperCase()}"`);
             navigate(`/dashboard/${res.data[0].name}`);
           }else{
