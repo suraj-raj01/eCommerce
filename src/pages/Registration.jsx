@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { message } from "antd";
 
 const Registration = () => {
     const navigate = useNavigate();
@@ -23,7 +23,8 @@ const Registration = () => {
         let url = "http://localhost:3000/Login";
         axios.post(url,input).then((res)=>{
             console.log(res.data)
-            toast("Registration successfully!!!");
+            message.success("Registration successfully!!!")
+            navigate("/login");
         })
     }
   return (
@@ -56,7 +57,6 @@ const Registration = () => {
           </Button>
         </Form>
       </div>
-      <ToastContainer />
     </>
   );
 };
