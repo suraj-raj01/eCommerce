@@ -276,6 +276,29 @@ Form Button{
     transition: .5s;
 }
 
+#offers{
+    position: fixed;
+    top: 90%;
+    right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* box-shadow: 0px 0px 4px green; */
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #6868b3;
+    color: whitesmoke;
+    cursor: pointer;
+    z-index: 10;
+    transition: .5s;
+}
+#offers:hover{
+    background-color: green;
+    box-shadow: 0px 0px 4px;
+    color: white;
+    transition: .5s;
+}
+
 @media(max-width:500px){
     #shop #filter-data h5{
         font-size: 12px;
@@ -286,6 +309,10 @@ Form Button{
     }
     #shop input{
         width: 20px;
+    }
+    #srchbtn{
+        font-weight: normal;
+        padding: 5px 2px;
     }
     #filter-btn{
         margin-top: 10px;
@@ -310,33 +337,15 @@ Form Button{
     #mycart{
         width: 100%;
     }
+    #offers{
+       font-size: 10px;
+       padding: 8px 5px;
+    }
 }
 marquee{
     font-style: italic;
     font-weight: 800;
     color: #686868;
-}
-#offers{
-    position: fixed;
-    top: 80%;
-    right: 10px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 4px green;
-    padding: 15px 7px;
-    font-weight: bold;
-    font-size: 14px;
-    background-color: #0080006a;
-    color: seashell;
-    cursor: pointer;
-    z-index: 10;
-    transition: .5s;
-    transform: rotate(320deg);
-}
-#offers:hover{
-    background-color: green;
-    box-shadow: 0px 0px 4px;
-    color: white;
-    transition: .5s;
 }
 
  #dashboard{
