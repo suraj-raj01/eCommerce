@@ -76,15 +76,11 @@ const MyCart = () => {
             {" ₹"}
           </td>
           <td>
-            <Button
-              variant="outline-primary"
-              onClick={() => {
+            <img style={{cursor:'pointer'}}
+                onClick={() => {
                 dataDelete(key.id);
-              }}
-            >
-              {" "}
-              Delete
-            </Button>
+              }} src="https://cdn-icons-png.flaticon.com/512/1345/1345874.png" alt="" height='20px'/>
+            
           </td>
         </tr>
       </>
@@ -128,11 +124,11 @@ const MyCart = () => {
               <th></th>
               <th></th>
               <th></th>
-              <th width="200" style={{ color: "#6868b3", fontSize: "20px" }}>
+              <th width="200" style={{ color: "black", fontSize: "20px" }}>
                 {" "}
-                Grand Total:{" "}
+                Grand Total{" "}
               </th>
-              <th style={{ color: "#6868b3", fontSize: "20px" }}>
+              <th style={{ color: "black", fontSize: "20px" }}>
                 {" "}
                 {grandTotal}
                 {".00₹"}{" "}
