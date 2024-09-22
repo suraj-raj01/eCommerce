@@ -120,10 +120,10 @@ const Footer=()=>{
                 info@laptopshop.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" /> <b>+ 91 6206546029</b>
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="print" className="me-3" /> <b>+ 91 9407567037</b>
               </p>
             </MDBCol>
           </MDBRow>
@@ -132,7 +132,7 @@ const Footer=()=>{
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
-        <a className='text-reset fw-bold' href='https://cybrombhopal.com/'>
+        <a className='text-reset fw-bold' href='/'>
           laptopshop.com
         </a>
       </div>
