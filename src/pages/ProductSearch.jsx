@@ -88,7 +88,7 @@ const ProductSearch = () => {
                 </p>
               </h4>
               <Button
-                variant="primary"
+                variant="outline-primary"
                 onClick={() => {
                   addDataToCart(
                     key.id,
