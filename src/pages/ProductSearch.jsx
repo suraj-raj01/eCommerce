@@ -51,7 +51,8 @@ const ProductSearch = () => {
     navigate(`/details/${id}`);
   };
   const ans = mydata.map((key) => {
-    const status = key.name.includes(txtdata);
+    let str = key.name.toUpperCase();
+    const status = str.includes(txtdata.toUpperCase());
     if (status) {
       return (
         <>
