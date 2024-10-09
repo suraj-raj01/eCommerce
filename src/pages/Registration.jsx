@@ -49,10 +49,10 @@ const Registration = () => {
             <Form.Control type="password" placeholder="Conf-Password" name="conf-password" onChange={handleInput}/>
           </Form.Group>
 
-          <Button variant="primary" onClick={handleSubmit}>
+          <Button variant="outline-primary" onClick={handleSubmit}>
             Registration
           </Button>
-          <Button variant="primary" onClick={login}>
+          <Button variant="outline-primary" onClick={login}>
             Login
           </Button>
         </Form>
