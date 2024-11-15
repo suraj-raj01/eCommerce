@@ -32,6 +32,9 @@
     background-color: white;
     box-shadow: 0px 0px 2px;
 }
+#topmenu .container{
+    background-color: white;
+}
 #topmenu a{
     font-weight: 500;   
 }
